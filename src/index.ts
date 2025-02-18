@@ -3,6 +3,9 @@ dotenv.config();
 
 import express from 'express';
 import { sequelize } from './db';
+import { userRouter, healthRouter } from './routes/index';
+import { errorHandler } from './middlewares/';
+
 
 const PORT = Number(process.env.SERVER_PORT) || 3000;
 const PROTOCOL = process.env.SERVER_PROTOCOL || 'http';
@@ -11,6 +14,9 @@ const SERVER_URL = `${PROTOCOL}://${HOST}:${PORT}`;
 
 const app = express();
 app.use(express.json());
+app.use('/users', userRouter);
+app.use('/', healthRouter);
+app.use(errorHandler);
 
 const startServer = async () => {
     try {

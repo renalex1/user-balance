@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import { DataTypes, Model, Sequelize } from 'sequelize';
-import { UserAttributes, UserCreationAttributes } from '../interfaces/UserAttributes';
+import { UserAttributes, UserCreationAttributes } from '../interfaces/user-attributes.interface';
 import { initializeDatabase } from './seed/index';
 
 

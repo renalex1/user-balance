@@ -1,1 +1,1 @@
-export * from './UserAttributes';
+export * from './user-attributes.interface';
