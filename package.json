@@ -1,0 +1,18 @@
+{
+  "name": "balance",
+  "module": "index.ts",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.13.4",
+    "ts-node": "^10.9.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
