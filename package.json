@@ -11,6 +11,7 @@
     "@types/bun": "latest",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.4",
+    "@types/pg": "^8.11.11",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0"
   },
@@ -19,6 +20,8 @@
   },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "sequelize": "^6.37.5"
   }
 }
